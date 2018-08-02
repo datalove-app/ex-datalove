@@ -50,7 +50,9 @@ defmodule Nebula.Mixfile do
       {:httpoison,  "~> 0.12", override: true},
       {:ok,         github: "sunny-g/ok", override: true},
       {:postgrex,   "~> 0.11"},
-      {:stellar,    "~> 0.2.0"},
+      # {:stellar,    "~> 0.2.0"},
+      {:stellar,    path: "~/gitdev/elixir-stellar-client"},
+      # {:xdr,        git: "https://github.com/sunny-g/xdr", branch: "v0.2.0"}
     ]
   end
 

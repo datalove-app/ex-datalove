@@ -30,7 +30,6 @@
   "poolboy": {:hex, :poolboy, "1.5.1", "6b46163901cfd0a1b43d692657ed9d7e599853b3b21b95ae5ae0a777cf9b6ca8", [:rebar], [], "hexpm"},
   "postgrex": {:hex, :postgrex, "0.13.5", "3d931aba29363e1443da167a4b12f06dcd171103c424de15e5f3fc2ba3e6d9c5", [:mix], [{:connection, "~> 1.0", [hex: :connection, repo: "hexpm", optional: false]}, {:db_connection, "~> 1.1", [hex: :db_connection, repo: "hexpm", optional: false]}, {:decimal, "~> 1.0", [hex: :decimal, repo: "hexpm", optional: false]}], "hexpm"},
   "ssl_verify_fun": {:hex, :ssl_verify_fun, "1.1.1", "28a4d65b7f59893bc2c7de786dec1e1555bd742d336043fe644ae956c3497fbe", [:make, :rebar], [], "hexpm"},
-  "stellar": {:hex, :stellar, "0.2.2", "39ea00c672872fa87d3c4c908887b6c7e30bef6f91c68e299ee599b537aff28b", [:mix], [{:crc, "~> 0.9.0", [hex: :crc, repo: "hexpm", optional: false]}, {:ed25519, "~> 1.1", [hex: :ed25519, repo: "hexpm", optional: false]}, {:httpoison, "~> 1.0", [hex: :httpoison, repo: "hexpm", optional: false]}, {:jason, "~> 1.0", [hex: :jason, repo: "hexpm", optional: false]}, {:xdr, "~> 0.1.1", [hex: :xdr, repo: "hexpm", optional: false]}], "hexpm"},
   "unicode_util_compat": {:hex, :unicode_util_compat, "0.3.1", "a1f612a7b512638634a603c8f401892afbf99b8ce93a45041f8aaca99cadb85e", [:rebar3], [], "hexpm"},
-  "xdr": {:hex, :xdr, "0.1.2", "6774f6b921267ab87c09d24e0a0cceca03503f6506f10b33321bf856df25ad0c", [:mix], [{:math, "~> 0.3.0", [hex: :math, repo: "hexpm", optional: false]}, {:ok, "~> 1.9", [hex: :ok, repo: "hexpm", optional: false]}], "hexpm"},
+  "xdr": {:git, "https://github.com/sunny-g/xdr.git", "8b883c249b7fe2f5d631cf1f35b978fa9f10d551", [branch: "v0.2.0"]},
 }
