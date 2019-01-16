@@ -1,0 +1,15 @@
+################################################################################
+#
+################################################################################
+
+stellar.asset:                bool .
+stellar.asset.issuer_id:      uid     @reverse @count .
+
+stellar.asset.issuer:         string  @index(hash) .
+stellar.asset.code:           string  @index(hash) .
+
+stellar.asset.type:           string .
+stellar.asset.amount:         string  @upsert .
+stellar.asset.num_accounts:   int     @upsert .
+stellar.asset.flags:          int     @upsert .
+stellar.asset.toml:           string  @upsert .

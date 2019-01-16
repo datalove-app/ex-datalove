@@ -1,0 +1,28 @@
+################################################################################
+#
+################################################################################
+
+stellar.effect:               bool .
+stellar.effect.account_id:    uid     @reverse .
+stellar.effect.operation_id:  uid     @reverse .
+
+stellar.effect.account:       string  @index(hash) .
+stellar.effect.type:          int     @index(int) .
+
+stellar.effect.order:         int .
+stellar.effect.details:       string .
+
+#####
+
+var muts []string
+var addrs [][string]int
+var assetStats [][string]AssetStat
+
+muts, addrs, assetStats = getMutations(ledgerObj)
+addrIdQuery := getAddressIdsQuery(addrs, addrIds)
+
+addrIds := txn.query(addrIdQuery)
+
+muts = updateMutationsWithAddrIds(muts, addrs, addrIds)
+muts = updateMutationsWithAssetStats(muts, assetStats)
+txn.mutate(muts)

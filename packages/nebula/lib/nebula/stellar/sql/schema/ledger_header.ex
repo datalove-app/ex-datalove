@@ -22,9 +22,4 @@ defmodule Nebula.Stellar.Sql.Schema.LedgerHeader do
     field(:close_time, :integer, source: :closetime)
     field(:data, :string)
   end
-
-  def changeset(header, params \\ %{}) do
-    header
-    |> cast(params, @fields)
-  end
 end

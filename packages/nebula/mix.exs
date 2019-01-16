@@ -5,7 +5,7 @@ defmodule Nebula.Mixfile do
   @version      "0.0.1-dev"
   @description  """
   """
-  @github       "https://github.com/datalove-network/ex-datalove/blob/master/packages/nebula"
+  @github       "https://github.com/datalove-app/ex-datalove/blob/master/packages/nebula"
   @files        ["lib", "mix.exs", "mix.lock", "README.md"]
   @maintainers  ["Sunny G"]
   @licenses     ["MIT"]

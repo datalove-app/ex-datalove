@@ -1,0 +1,28 @@
+################################################################################
+#
+################################################################################
+
+stellar.transaction:                    bool .
+stellar.transaction.account_id:         uid       @reverse @count .
+stellar.transaction.ledger_id:          uid       @reverse @count .
+
+stellar.transaction.transaction_hash:   string    @index(hash) .
+stellar.transaction.ledger_sequence:    int       @index(int) .
+stellar.transaction.account:            string    @index(hash) .
+stellar.transaction.account_sequence:   int       @index(int) .
+stellar.transaction.application_order:  int       @index(int) .
+stellar.transaction.memo_type:          string    @index(hash) .
+stellar.transaction.memo:               string    @index(hash) .
+
+stellar.transaction.operation_count:    int .
+stellar.transaction.fee_paid:           int .
+stellar.transaction.fee_meta:           string .
+stellar.transaction.envelope:           string .
+stellar.transaction.result:             string .
+stellar.transaction.meta:               string .
+stellar.transaction.signatures:         string .
+stellar.transaction.time_bounds:        dateTime .
+
+# Facets:
+stellar.transaction.created_at:         dateTime .
+stellar.transaction.updated_at:         dateTime .

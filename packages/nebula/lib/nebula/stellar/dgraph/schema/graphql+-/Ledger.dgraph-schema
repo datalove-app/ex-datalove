@@ -1,0 +1,26 @@
+################################################################################
+#
+################################################################################
+
+stellar.ledger:                       bool .
+stellar.ledger.previous_ledger:       uid       @reverse .
+
+stellar.ledger.importer_version:      int       @index(int) .
+stellar.ledger.protocol_version:      int       @index(int) .
+stellar.ledger.sequence:              int       @index(int) .
+stellar.ledger.ledger_hash:           string    @index(hash) .
+stellar.ledger.previous_ledger_hash:  string    @index(hash) .
+stellar.ledger.closed_at:             dateTime  @index(hour) .
+
+stellar.ledger.transaction_count:     int .
+stellar.ledger.operation_count:       int .
+stellar.ledger.total_coins:           int .
+stellar.ledger.fee_pool:              int .
+stellar.ledger.base_fee:              int .
+stellar.ledger.base_reserve:          int .
+stellar.ledger.max_tx_set_size:       int .
+stellar.ledger.ledger_header:         string .
+
+# Facets
+stellar.ledger.created_at:            dateTime .
+stellar.ledger.updated_at:            dateTime .

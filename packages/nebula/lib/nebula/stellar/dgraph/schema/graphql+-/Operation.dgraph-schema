@@ -1,0 +1,14 @@
+################################################################################
+#
+################################################################################
+
+stellar.operation:                    bool .
+stellar.operation.transaction_id:     uid     @reverse @count .
+stellar.operation.source_account_id:  uid     @reverse @count .
+
+stellar.operation.source_account:     string  @index(hash) .
+stellar.operation.transaction_hash:   string  @index(hash) .
+stellar.operation.type:               string  @index(hash) .
+stellar.operation.application_order:  int     @index(int) .
+
+stellar.operation.details:            string .
